@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development - Gema Portfolio</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Gema.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#works" class="active">Back to Portfolio</a>
+        </nav>
+    </header>
+
+    <section class="portfolio-detail system-roadmap" id="system-detail">
+        <h2 class="heading">The <span>Engineering</span> Roadmap (2026)</h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <div class="tech-icon"><i class='bx bxl-c-plus-plus'></i></div>
+                <div class="portfolio-layer">
+                    <h4>C++ Programming</h4>
+                    <p>Systems Programming & Intelligent Control.</p>
+                    <span class="tech-role">Lokomotif & Shinkansen Systems</span>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="tech-icon"><i class='bx bxl-python'></i></div>
+                <div class="portfolio-layer">
+                    <h4>Python & AI</h4>
+                    <p>Advanced Robotics & Control Algorithms.</p>
+                    <span class="tech-role">Machine Learning for Maintenance</span>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="tech-icon"><i class='bx bxl-java'></i></div>
+                <div class="portfolio-layer">
+                    <h4>Java / C#</h4>
+                    <p>Desktop Applications & Operating Panels.</p>
+                    <span class="tech-role">Operator Station Interface</span>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="tech-icon"><i class='bx bxl-javascript'></i></div>
+                <div class="portfolio-layer">
+                    <h4>JavaScript (Node.js)</h4>
+                    <p>Full-Stack Web Control & IoT Integration.</p>
+                    <span class="tech-role">Remote System Monitoring</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // Animasi simpel khusus halaman ini
+        ScrollReveal().reveal('.heading', { origin: 'top', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.portfolio-box', { origin: 'bottom', distance: '50px', duration: 1000, interval: 200 });
+    </script>
+</body>
+
+</html>

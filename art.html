@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watercolor Art - Gema Portfolio</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Gema.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#works" class="active">Back to Portfolio</a>
+        </nav>
+    </header>
+
+    <section class="portfolio-detail portrait-mode">
+        <h2 class="heading">Watercolor <span>Gallery</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="art (1).jpeg" alt="Sunset">
+                <div class="portfolio-layer">
+                    <h4>Golden Sunset</h4>
+                    <p>Eksplorasi warna hangat pada awan.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="art (2).jpeg" alt="Mountain">
+                <div class="portfolio-layer">
+                    <h4>The Twin Peaks</h4>
+                    <p>Teknik layering untuk kedalaman gunung.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="art (3).jpeg" alt="Night">
+                <div class="portfolio-layer">
+                    <h4>Moonlight Serenity</h4>
+                    <p>Efek cahaya bulan dengan Titanium White.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="btn-countainer">
+        <a href="index.html" class="btn">Back to Main Portfolio</a>
+    </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // Animasi simpel khusus halaman ini
+        ScrollReveal().reveal('.heading', { origin: 'top', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.portfolio-box', { origin: 'bottom', distance: '50px', duration: 1000, interval: 200 });
+    </script>
+</body>
+
+</html>

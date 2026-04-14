@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development - Gema Portfolio</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Gema.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#works" class="active">Back to Portfolio</a>
+        </nav>
+    </header>
+
+    <section class="portfolio-detail" id="web-detail">
+        <h2 class="heading">Web <span>Development</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="sistem1 (3).jpeg" alt="Coding Session">
+                <div class="portfolio-layer">
+                    <h4>Mobile Development</h4>
+                    <p>Membangun antarmuka responsif langsung dari smartphone menggunakan Acode Editor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio-detail" id="system-detail">
+        <h2 class="heading">Intelligent <span>Systems</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="shikansen.jpeg" alt="Future Train">
+                <div class="portfolio-layer">
+                    <h4>High-Speed Innovation</h4>
+                    <p>Riset tentang sistem kendali cerdas untuk transportasi masa depan yang lebih aman dan efisien.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // Animasi simpel khusus halaman ini
+        ScrollReveal().reveal('.heading', { origin: 'top', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.portfolio-box', { origin: 'bottom', distance: '50px', duration: 1000, interval: 200 });
+    </script>
+</body>
+
+</html>
