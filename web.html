@@ -14,12 +14,18 @@
 <body>
     <header class="header">
         <a href="index.html" class="logo">Gema.</a>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="index.html#works" class="active">Back to Portfolio</a>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#portfolio" class="active">Back to Portfolio</a></li>
+            </ul>
         </nav>
     </header>
-
     <section class="portfolio-detail system-roadmap" id="system-detail">
         <h2 class="heading">The <span>Engineering</span> Roadmap (2026)</h2>
 
@@ -64,12 +70,11 @@
         </div>
     </section>
 
+
+
+
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        // Animasi simpel khusus halaman ini
-        ScrollReveal().reveal('.heading', { origin: 'top', distance: '50px', duration: 1000 });
-        ScrollReveal().reveal('.portfolio-box', { origin: 'bottom', distance: '50px', duration: 1000, interval: 200 });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

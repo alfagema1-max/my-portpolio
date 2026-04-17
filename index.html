@@ -13,6 +13,11 @@
 <body>
     <div id="preloader">
         <div class="preloader-content">
+            <div class="preloader-icons">
+                <i class='bx bx-code-alt'></i>
+                <i class='bx bx-palette'></i>
+                <i class='bx bxs-train'></i>
+            </div>
             <h1 class="welcome-text">Welcome to <span>My Portfolio</span></h1>
             <div class="loader-line"></div>
         </div>
@@ -22,12 +27,21 @@
         <a href="#" class="logo">
             <img src="main.jpeg" alt="Logo"> Gema
         </a>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#works">Works</a>
-            <a href="#contact">Contact</a>
+
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#portfolio">Works</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -60,11 +74,11 @@
         </div>
 
         <div class="home-img">
-            <img src="main.jpeg" alt="Train Logo">
+            <img src="myProfil.jpeg" alt="Train Logo">
         </div>
     </section>
 
-    <section class="skills-row" id="skills">
+    <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
 
         <div class="skills-row">
@@ -147,7 +161,7 @@
         </div>
     </section>
 
-    <section class="portfolio" id="works">
+    <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Projects</span></h2>
 
         <div class="portfolio-container">
@@ -165,7 +179,7 @@
                 <div class="portfolio-layer">
                     <h4>Watercolor Art</h4>
                     <p>Eksplorasi teknik layering dan light effects pada pemandangan alam (Landscape).</p>
-                    <a href="art.html"><i class='bx bx-palette'></i></a>
+                    <a href="art.html"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -174,7 +188,7 @@
                 <div class="portfolio-layer">
                     <h4>Intelligent Control</h4>
                     <p>Riset awal sistem kendali cerdas untuk transportasi kecepatan tinggi.</p>
-                    <a href="sytem.html"><i class='bx bxs-component'></i></a>
+                    <a href="system.html"><i class='bx bxs-component'></i></a>
                 </div>
             </div>
         </div>
@@ -185,20 +199,22 @@
 
         <form action="https://formspree.io/f/xzdybzbb" method="POST">
             <div class="input-box">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="name" placeholder="Full Name" autocomplete="name" required>
+                <input type="email" name="email" placeholder="Email Address" autocomplete="email" required>
             </div>
-            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" autocomplete="off"
+                required></textarea>
             <input type="submit" value="Send Message" class="btn">
             <a href="https://wa.me/6282125715248?text=Halo%20Gema,%20saya%20tertarik%20dengan%20portfolio%20anda"
                 class="btn">Chat via WhatsApp</a>
         </form>
+    </section>
 
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 
-        <script src="script.js"></script>
-
+</body>
 
 </html>
